@@ -1,0 +1,20 @@
+/* groovystatic.version = 2017.7 */
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+compileGroovy {
+    groovyOptions.optimizationOptions.indy = true
+    configure(groovyOptions) {
+        configurationScript = file("gradle/config.groovy")
+    }
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy:2.4.12:indy'
+}

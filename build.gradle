@@ -1,0 +1,11 @@
+apply from: 'gradle/groovystatic.gradle'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'junit:junit:5.0'
+}

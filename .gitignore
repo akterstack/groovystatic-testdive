@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+.*
+!.gitconfig
+!.gitignore
+!.travis.yml
+!.babelrc
+!.editorconfig
+!.eslintignore
+!.eslintrc.js
+!.stylintrc
+build
+target
+*.iml
+*.ipr
+*.iws
